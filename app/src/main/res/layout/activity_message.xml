@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/home_back"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:id="@+id/home_student_edit_back"
+            android:theme="@style/RippleWhite"
+            android:contentDescription="back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="通知管理"
+            android:textSize="@dimen/normalSize"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/CommonPadding"
+        android:id="@+id/home_student_message_tempId"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="20dp"
+                android:textSize="@dimen/smallSize"
+                android:background="@color/colorGray"
+                android:text="@string/defalut"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:id="@+id/home_student_message_tempTime"/>
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="@dimen/CommonPadding"
+            android:layout_marginLeft="@dimen/CommonPadding"
+            android:layout_marginRight="@dimen/CommonPadding"
+            app:cardCornerRadius="5dp"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/CommonPadding"
+                android:layout_marginRight="@dimen/CommonPadding"
+                android:textSize="@dimen/smallSize"
+                android:text="@string/defalut"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/home_student_message_tempContent"
+                android:gravity="center_vertical"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/CommonPadding"
+        android:id="@+id/home_student_message_faceId"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="20dp"
+                android:textSize="@dimen/smallSize"
+                android:background="@color/colorGray"
+                android:text="@string/defalut"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:id="@+id/home_student_message_faceTime"
+                />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="@dimen/CommonPadding"
+            android:layout_marginLeft="@dimen/CommonPadding"
+            android:layout_marginRight="@dimen/CommonPadding"
+            app:cardCornerRadius="5dp"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/CommonPadding"
+                android:layout_marginRight="@dimen/CommonPadding"
+                android:textSize="@dimen/smallSize"
+                android:text="@string/defalut"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/home_student_message_faceContent"
+                android:gravity="center_vertical" />
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/CommonPadding"
+        android:id="@+id/home_student_message_cardId"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="20dp"
+                android:textSize="@dimen/smallSize"
+                android:background="@color/colorGray"
+                android:text="@string/defalut"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:id="@+id/home_student_message_cardTime" />
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="@dimen/CommonPadding"
+            android:layout_marginLeft="@dimen/CommonPadding"
+            android:layout_marginRight="@dimen/CommonPadding"
+            app:cardCornerRadius="5dp"
+            android:clickable="true"
+            android:foreground="?selectableItemBackground">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/CommonPadding"
+                android:layout_marginRight="@dimen/CommonPadding"
+                android:textSize="@dimen/smallSize"
+                android:gravity="center_vertical"
+                android:text="@string/defalut"
+                android:textColor="@color/colorBlack"
+                android:id="@+id/home_student_message_cardContent"/>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

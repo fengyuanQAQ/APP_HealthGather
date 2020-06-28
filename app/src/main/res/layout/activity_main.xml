@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/login_bg"
+            android:scaleType="centerCrop"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/BigMargin"
+        android:layout_marginStart="@dimen/BigMargin"
+        android:layout_marginEnd="@dimen/BigMargin">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/login_student"
+                android:scaleType="center"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="姓名"
+                android:id="@+id/login_name"
+                android:theme="@style/RoomEditTextTheme"
+                android:inputType="text"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@mipmap/login_id"
+                android:scaleType="center"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="学号"
+                android:theme="@style/RoomEditTextTheme"
+                android:id="@+id/login_id"
+                android:inputType="text"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/bigSize"
+        android:layout_marginEnd="@dimen/bigSize"
+        android:layout_marginTop="@dimen/CommonPadding"
+        android:gravity="center"
+        android:id="@+id/login_identity">
+
+        <RadioButton
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:checked="true"
+            android:text="学生"
+            android:textSize="@dimen/smallSize"
+            android:id="@+id/login_student"/>
+
+        <RadioButton
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="管理员"
+            android:textSize="@dimen/smallSize"
+            android:layout_marginStart="@dimen/CommonPadding"
+            android:id="@+id/login_administer"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/login_confirm"
+        android:layout_marginTop="@dimen/BigMargin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/BigMargin"
+        android:layout_marginEnd="@dimen/BigMargin"
+        android:background="@drawable/btn_ripple"
+        android:text="登陆"
+        android:textSize="@dimen/normalSize"
+        android:textColor="@color/colorWhite"/>
+
+</LinearLayout>

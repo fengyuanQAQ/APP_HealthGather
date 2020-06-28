@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popwnd_style">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/smallSize"
+        android:text="全部"
+        android:gravity="center"
+        android:id="@+id/home_admin_all"
+        android:foreground="?selectableItemBackground"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGrayDark"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/smallSize"
+        android:text="未打卡"
+        android:gravity="center"
+        android:id="@+id/home_admin_card"
+        android:foreground="?selectableItemBackground"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGrayDark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/smallSize"
+        android:text="未人脸识别"
+        android:gravity="center"
+        android:id="@+id/home_admin_face"
+        android:foreground="?selectableItemBackground"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGrayDark"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/smallSize"
+        android:text="温度异常"
+        android:gravity="center"
+        android:id="@+id/home_admin_tempExp"
+        android:foreground="?selectableItemBackground"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGrayDark" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/smallSize"
+        android:text="有异常"
+        android:gravity="center"
+        android:id="@+id/home_admin_hasExp"
+        android:foreground="?selectableItemBackground"/>
+
+</LinearLayout>

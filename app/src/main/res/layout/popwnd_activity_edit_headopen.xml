@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="上传方式"
+            android:textSize="18sp"
+            android:textColor="@color/colorGrayDark"
+            android:gravity="center"
+            android:background="@drawable/popwnd_style"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorBlack" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="拍照"
+            android:textSize="21sp"
+            android:id="@+id/home_setting_upload_capture"
+            android:background="@color/colorWhite" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorBlack" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="从相册选"
+            android:textSize="21sp"
+            android:id="@+id/home_setting_upload_fromPhoto"
+            android:background="@color/colorWhite"/>
+
+    </LinearLayout>
+
+</LinearLayout>

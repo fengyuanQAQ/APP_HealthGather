@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popwnd_style">
+
+    <com.zyyoona7.wheel.WheelView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:id="@+id/popwnd_wheelview"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/bigSize"
+        android:paddingEnd="@dimen/bigSize"
+        android:paddingBottom="@dimen/CommonPadding">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:id="@+id/popwnd_wheelview_cancle"
+            android:background="@color/colorGreen"
+            android:layout_marginEnd="@dimen/bigSize"
+            android:foreground="?selectableItemBackground"
+            android:text="取消"
+            android:textSize="@dimen/normalSize"
+            android:textColor="@color/colorWhite"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:id="@+id/popwnd_wheelview_confirm"
+            android:background="@color/colorBlue"
+            android:layout_marginStart="@dimen/bigSize"
+            android:foreground="?selectableItemBackground"
+            android:text="确定"
+            android:textSize="@dimen/normalSize"
+            android:textColor="@color/colorWhite"/>
+    </LinearLayout>
+
+</LinearLayout>

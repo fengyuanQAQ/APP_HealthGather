@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/home_back"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:theme="@style/RippleWhite"
+            android:id="@+id/home_student_edit_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="学生信息"
+            android:textSize="@dimen/smallSize"
+            android:layout_toRightOf="@id/home_student_edit_back"
+            android:layout_toLeftOf="@id/home_admin_edit"/>
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/admin_dropdown"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:theme="@style/RippleWhite"
+            android:id="@+id/home_admin_edit"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textColor="@color/colorGrayDark"
+        android:text="下拉刷新........"
+        android:textSize="12dp"
+        android:gravity="center"/>
+
+
+    <com.baoyz.widget.PullRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_admin_pull"
+        android:layout_marginStart="@dimen/CommonPadding"
+        android:layout_marginEnd="@dimen/CommonPadding">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@color/colorWhite">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="姓名"
+                    android:gravity="center"
+                    android:textSize="@dimen/normalSize"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="打卡"
+                    android:gravity="center"
+                    android:textSize="@dimen/normalSize"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="人脸识别"
+                    android:gravity="center"
+                    android:textSize="@dimen/normalSize"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="体温"
+                    android:gravity="center"
+                    android:textSize="@dimen/normalSize"/>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/home_admin_rv" />
+        </LinearLayout>
+
+    </com.baoyz.widget.PullRefreshLayout>
+
+
+</LinearLayout>

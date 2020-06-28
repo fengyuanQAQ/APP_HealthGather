@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="150dp"
+    android:background="#40000000"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="@dimen/loadingSize"
+        android:gravity="center">
+        <com.wang.avi.AVLoadingIndicatorView
+            android:layout_width="@dimen/loadingSize"
+            android:layout_height="@dimen/loadingSize"
+            android:id="@+id/loading_avi"
+            style="@style/AVLoadingIndicatorView"
+            app:indicatorName="BallClipRotatePulseIndicator"
+            app:indicatorColor="@color/colorBlue"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loadingSize">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="正在加载。。。"
+            android:textSize="@dimen/normalSize"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/loading_text"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

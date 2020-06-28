@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/colorWhite">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/home_back"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:id="@+id/home_student_edit_back"
+            android:theme="@style/RippleWhite"
+            android:contentDescription="back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="个人信息修改"
+            android:textSize="@dimen/normalSize"
+            android:textColor="@color/colorBlack"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/CommonPadding"
+        android:layout_marginEnd="@dimen/CommonPadding"
+        android:layout_marginTop="@dimen/CommonPadding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="年级:"
+                android:textSize="@dimen/normalSize"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBlack"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/defalut"
+                android:textSize="@dimen/normalSize"
+                android:gravity="center_vertical|end"
+                android:id="@+id/home_student_edit_grade"
+                android:textColor="@color/colorBlack"
+                android:drawableEnd="@mipmap/hone_daycard_next" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrayTint"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/CommonPadding">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="班级:"
+                android:textSize="@dimen/normalSize"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBlack"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/defalut"
+                android:textSize="@dimen/normalSize"
+                android:gravity="center_vertical|end"
+                android:id="@+id/home_student_edit_class"
+                android:textColor="@color/colorBlack"
+                android:drawableEnd="@mipmap/hone_daycard_next" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrayTint"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/CommonPadding">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="学院:"
+                android:textSize="@dimen/normalSize"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBlack"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/defalut"
+                android:textSize="@dimen/normalSize"
+                android:gravity="center_vertical|end"
+                android:id="@+id/home_student_edit_academy"
+                android:textColor="@color/colorBlack"
+                android:drawableEnd="@mipmap/hone_daycard_next" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrayTint"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/CommonPadding">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="专业:"
+                android:textSize="@dimen/normalSize"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBlack"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/defalut"
+                android:textSize="@dimen/normalSize"
+                android:gravity="center_vertical|end"
+                android:id="@+id/home_student_edit_profession"
+                android:textColor="@color/colorBlack"
+                android:drawableEnd="@mipmap/hone_daycard_next" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrayTint"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/CommonPadding">
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:text="电话:"
+                android:textSize="@dimen/normalSize"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorBlack"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/normalSize"
+                android:gravity="center"
+                android:id="@+id/home_student_edit_phone"
+                android:textColor="@color/colorBlack"
+                android:inputType="phone"
+                android:background="@null" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_marginStart="@dimen/CommonPadding"
+        android:layout_marginEnd="@dimen/CommonPadding"
+        android:layout_marginTop="@dimen/bigSize"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/btn_ripple"
+        android:text="保存"
+        android:textSize="@dimen/normalSize"
+        android:id="@+id/home_student_edit_save"/>
+</LinearLayout>

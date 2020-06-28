@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:textSize="@dimen/normalSize"
+        android:text="学生界面"
+        android:id="@+id/home_student_title"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorGrayDark" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_student_jump">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/CommonPadding">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="90dp"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:layout_marginStart="20dp"
+                android:src="@mipmap/home_head"
+                android:id="@+id/home_student_head"/>
+
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/bigSize">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:textSize="@dimen/smallSize"
+                    android:text="@string/defalut"
+                    android:id="@+id/home_student_name" />
+
+
+                <TextView
+                    android:id="@+id/home_student_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:text="@string/defalut"
+                    android:textSize="@dimen/smallSize" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:textSize="@dimen/smallSize"
+                    android:text="@string/defalut"
+                    android:id="@+id/home_student_grade" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="0dp"
+                    android:textSize="@dimen/smallSize"
+                    android:text="@string/defalut"
+                    android:id="@+id/home_student_class" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginEnd="@dimen/CommonPadding"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/bigSize"
+                    android:text="@string/defalut"
+                    android:gravity="center"
+                    android:id="@+id/home_student_year"
+                    android:textColor="@color/colorBlack"/>
+
+                <TextView
+                    android:paddingBottom="@dimen/normalPadding"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/smallSize"
+                    android:text="@string/defalut"
+                    android:gravity="center"
+                    android:id="@+id/home_student_month"
+                    android:textColor="@color/colorGrayDark"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginStart="@dimen/CommonPadding"
+            android:layout_marginEnd="@dimen/CommonPadding"
+            android:paddingBottom="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cardSize"
+                android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/CommonPadding"
+                    app:cardCornerRadius="10dp"
+                    android:foreground="?selectableItemBackground"
+                    android:id="@+id/home_student_dayCard"
+                    android:layout_marginEnd="@dimen/smallPadding"
+                    app:cardElevation="@dimen/ElevationPadding">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="每日打卡"
+                        android:gravity="center"
+                        android:textSize="@dimen/bigSize" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/CommonPadding"
+                    app:cardCornerRadius="10dp"
+                    android:foreground="?selectableItemBackground"
+                    android:id="@+id/home_student_mod"
+                    android:layout_marginStart="@dimen/smallPadding"
+                    app:cardElevation="@dimen/ElevationPadding">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="信息设置"
+                        android:gravity="center"
+                        android:textSize="@dimen/bigSize"/>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cardSize"
+                android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/CommonPadding"
+                app:cardCornerRadius="10dp"
+                android:foreground="?selectableItemBackground"
+                android:id="@+id/home_student_health"
+                android:layout_marginEnd="@dimen/smallPadding"
+                android:clickable="true"
+                app:cardElevation="@dimen/ElevationPadding">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:src="@mipmap/ic_normal"
+                        android:id="@+id/home_student_temp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="37.1℃"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/normalSize"
+                        android:id="@+id/home_student_number"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/CommonPadding"
+                android:layout_weight="1"
+                app:cardCornerRadius="10dp"
+                android:foreground="?selectableItemBackground"
+                android:id="@+id/home_student_message"
+                android:layout_marginStart="@dimen/smallPadding"
+                app:cardElevation="@dimen/ElevationPadding">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="通知管理"
+                    android:gravity="center"
+                    android:textSize="@dimen/bigSize"/>
+            </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
